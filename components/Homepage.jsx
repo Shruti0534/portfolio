@@ -3,12 +3,10 @@ import React, { useEffect, useState } from 'react'
 
 const Homepage = () => {
   const [visitor,setvisitor]=useState(0)
-  useEffect(()=>{
     fetchVisitor().then((call)=>{
       console.log(call.totalvisitor.count)
       setvisitor(call.totalvisitor.count)
     })
-  },[])
   console.log('visitor', visitor)
   return (
     <div  id='Homepage' className='h-screen flex flex-col justify-center items-center'>
