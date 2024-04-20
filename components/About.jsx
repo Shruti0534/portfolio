@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 
 const About = () => {
   return (
-    <div className='md:flex flex-col-reverse justify-center items-center w-full' id='About'>
+    <div className='md:flex justify-center items-center w-full h-full' id='About'>
       <div className='md:w-[50%] h-fit pl-3 flex flex-col justify-center text-xs gap-3 text-orange-400'>
         
       <div>
