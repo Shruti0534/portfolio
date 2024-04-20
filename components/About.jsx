@@ -5,8 +5,8 @@ import dynamic from "next/dynamic";
 
 const About = () => {
   return (
-    <div className='flex justify-center items-center w-full' id='About'>
-      <div className='w-[50%] pl-3 flex flex-col justify-center text-xs gap-3 text-orange-400'>
+    <div className='md:flex flex-col-reverse justify-center items-center w-full' id='About'>
+      <div className='md:w-[50%] h-fit pl-3 flex flex-col justify-center text-xs gap-3 text-orange-400'>
         
       <div>
         My name is Shruti Tiwari
@@ -24,7 +24,7 @@ const About = () => {
         I am currently learning web development
       </div>
       </div>
-      <div className='w-[50%]'>
+      <div className='md:w-[50%] h-fit'>
         <GlobeDemo />
       </div>
     </div>

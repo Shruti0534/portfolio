@@ -64,8 +64,8 @@ const Contact = () => {
   };
 
   return (
-    <div id="Contact" className=" h-screen flex">
-      <div className="w-[50%] flex items-center justify-center ">
+    <div id="Contact" className=" h-screen md:flex">
+      <div className="md:w-[50%] flex items-center justify-center ">
         <div className="flex flex-col items-start gap-5">
         {contact.map((item) => {
           return (
@@ -79,7 +79,7 @@ const Contact = () => {
         
       </div>
 
-      <div className="w-[50%] flex justify-center items-center">
+      <div className="md:w-[50%] flex justify-center items-center">
         <form action="" className="flex flex-col gap-5">
           <div className=" flex-col flex ">
             <label htmlFor="">NAME</label>

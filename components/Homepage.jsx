@@ -16,8 +16,8 @@ const Homepage = () => {
           visitor-{visitor}
         </div>
       </div>
-      <div className=' text-7xl anime'>SHRUTI TIWARI</div>
-      <div className=' '>
+      <div className=' md:text-7xl text-4xl anime'>SHRUTI TIWARI</div>
+      <div className=' text-xs md:text-lg'>
         <span>DESIGN AND DEVELOP</span>
         <span className=' text-yellow-400'> GAMES</span>
       </div>
