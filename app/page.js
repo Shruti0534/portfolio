@@ -8,21 +8,24 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import { fetchVisitor, toIncreaseCount } from "@/server/HandleVisitor";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [visitor,setvisitor]=useState(0)
+
   useEffect(()=>{
     fetchVisitor().then((visitor)=>{
       const tcount=visitor.totalvisitor.count
       const ncount=tcount+1
       toIncreaseCount(ncount)
+      setvisitor(tcount)
     })
   },[])
 
   return (
   <main style={{fontFamily:'Azonix'}}> 
     <Navbar/>
-    <Homepage/>
+    <Homepage visitor={visitor}/>
     <Skills/>
     <Projects/>
     <About/>

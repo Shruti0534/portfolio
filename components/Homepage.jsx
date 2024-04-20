@@ -1,15 +1,8 @@
+'use client'
 import { fetchVisitor } from '@/server/HandleVisitor'
 import React, { useEffect, useState } from 'react'
 
-const Homepage = () => {
-
-  const [visitor,setvisitor]=useState(0)
-
-  fetchVisitor().then((call)=>{
-      console.log(call.totalvisitor.count)
-      setvisitor(call.totalvisitor.count)
-    })
-  console.log('visitor', visitor)
+const Homepage = ({visitor}) => {
   return (
     <div  id='Homepage' className='h-screen flex flex-col justify-center items-center'>
       <div className=' absolute top-[20%] right-4'>
