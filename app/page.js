@@ -16,6 +16,7 @@ export default function Home() {
   useEffect(()=>{
     fetchVisitor().then((visitor)=>{
       const tcount=visitor.totalvisitor.count
+      console.log('visitor', tcount)
       const ncount=tcount+1
       toIncreaseCount(ncount)
       setvisitor(tcount)
