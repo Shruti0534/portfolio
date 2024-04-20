@@ -2,8 +2,10 @@ import { fetchVisitor } from '@/server/HandleVisitor'
 import React, { useEffect, useState } from 'react'
 
 const Homepage = () => {
+
   const [visitor,setvisitor]=useState(0)
-    fetchVisitor().then((call)=>{
+
+  fetchVisitor().then((call)=>{
       console.log(call.totalvisitor.count)
       setvisitor(call.totalvisitor.count)
     })
