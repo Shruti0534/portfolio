@@ -9,24 +9,24 @@ const contact = [
   {
     Logo: "/facebook.svg",
     Name: "Facebook",
-    Link: "",
+    Link: "https://www.facebook.com/",
   },
   {
   Logo: "/gmail.svg",
   Name: "Gmail",
-  Link: "",
+  Link: "mailto:shrutit515@gmail.com",
 },
 {
 
 Logo: "/instagram.svg",
 Name: "Instagram",
-Link: "",
+Link: "https://www.instagram.com/_shruti__tiwari_05/",
 },
 {
 
   Logo: "/linkedin.svg",
   Name: "Linkedin",
-  Link: "",
+  Link: "https://www.linkedin.com/in/shruti-tiwari-a8537725a/",
   },
 ];
 
@@ -85,7 +85,7 @@ const Contact = () => {
             <label htmlFor="">NAME</label>
             <input
               type="text"
-              className=" bg-transparent border-[1px] px-3"
+              className=" bg-transparent border-[1px] px-3 rounded-lg py-2"
               placeholder="NAME"
               value={data.name}
               onChange={(e) => setData({ ...data, name: e.target.value })}
@@ -95,7 +95,7 @@ const Contact = () => {
             <label htmlFor="">EMAIL</label>
             <input
               type="email"
-              className=" bg-transparent border-[1px] px-3"
+              className=" bg-transparent border-[1px] px-3 rounded-lg py-2"
               placeholder="EMAIL"
               value={data.email}
               onChange={(e) => setData({ ...data, email: e.target.value })}
@@ -104,17 +104,16 @@ const Contact = () => {
           <div className=" flex-col flex ">
             <label htmlFor="">MESSAGE</label>
             <textarea
-              rows={5}
-              maxLength={5}
+              rows={3}
               type="text"
-              className=" bg-transparent border-[1px] px-3"
+              className=" bg-transparent border-[1px] px-3 rounded-lg py-2"
               placeholder="MESSAGE"
               value={data.message}
               onChange={(e) => setData({ ...data, message: e.target.value })}
             />
           </div>
           <button
-            className=" bg-blue-600 py-2 flex  w-fit px-2 rounded-lg hover:bg-blue-800"
+            className=" bg-blue-600 py-2 flex  justify-center items-center px-2 rounded-lg hover:bg-blue-800"
             onClick={(e) => onSubmit(e)}
           >
             Submit{" "}

@@ -150,3 +150,7 @@ body {
       @apply bg-background text-foreground;
     }
   }
+
+  .navbg{
+    background: rgba(255, 255, 255, 0.111);
+  }
