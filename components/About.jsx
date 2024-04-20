@@ -5,15 +5,14 @@ import dynamic from "next/dynamic";
 
 const About = () => {
   return (
-    <div className='flex justify-center items-center w-full
-    ' id='About'>
+    <div className='flex justify-center items-center w-full' id='About'>
       <div className='w-[50%] pl-3 flex flex-col justify-center text-xs gap-3 text-orange-400'>
         
       <div>
         My name is Shruti Tiwari
       </div>
       <div>
-        I completed my intermediate from St.Xaiver's Salempur
+        I completed my intermediate from St. Xaiver{"'"}s Salempur
       </div>
       <div>
         I currently pursuing B.tech  in ECE from Institute of Engineering and Technology Lucknow
