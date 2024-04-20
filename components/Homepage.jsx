@@ -9,6 +9,7 @@ const Homepage = () => {
       setvisitor(call.totalvisitor.count)
     })
   },[])
+  console.log('visitor', visitor)
   return (
     <div  id='Homepage' className='h-screen flex flex-col justify-center items-center'>
       <div className=' absolute top-[20%] right-4'>
