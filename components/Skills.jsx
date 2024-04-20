@@ -26,7 +26,7 @@ const Skills = () => {
     <div id="Skills" className=" h-full ">
       <div className="flex flex-wrap justify-center items-center gap-8">
         {skill.map((item) => (
-          <div className="flex  justify-center items-center gap-5">
+          <div key={item.NAME} className="flex  justify-center items-center gap-5">
             <div className="flex justify-center items-center gap-2">
             <Image src={item.LOGO} alt= {item.NAME} width={30} height={30}/>
             <div>{item.NAME}</div>

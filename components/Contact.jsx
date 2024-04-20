@@ -69,7 +69,7 @@ const Contact = () => {
         <div className="flex flex-col items-start gap-5">
         {contact.map((item) => {
           return (
-            <Link href={item.Link} className="flex justify-center items-center gap-5">
+            <Link key={item.Name} href={item.Link} className="flex justify-center items-center gap-5">
               <Image src={item.Logo} alt={item.Name} width={30} height={30} />
               <span>{item.Name}</span>
             </Link>

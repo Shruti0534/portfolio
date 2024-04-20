@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
       <div className='flex justify-center w-full gap-5 '>
         {tag.map((item)=>(
-            <Link onClick={()=>setActive(item.Name)} href={item.Link}  className={`${active === item.Name ? ' text-white' : 'text-neutral-400 '} hover:text-neutral-500`}>
+            <Link key={item.Name} onClick={()=>setActive(item.Name)} href={item.Link}  className={`${active === item.Name ? ' text-white' : 'text-neutral-400 '} hover:text-neutral-500`}>
                 <div className=' flex justify-end text-xs'> {item.Number}</div>
                 <div>{item.Name}</div>
             </Link>
