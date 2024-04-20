@@ -32,7 +32,7 @@ const Skills = () => {
             <div>{item.NAME}</div>
 
             </div>
-            <Link className=" text-xs hover:text-blue-400 ease-in-out duration-300" href={item.LINK}>View certificate</Link>
+            <button className=" text-xs hover:text-blue-400 ease-in-out duration-300" onClick={() => window.open('/java.jpg', '_blank')}>View certificate</button>
           </div>
         ))}
       </div>
